@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml>
+	
+    <FlickrViewer id="iv" gestureReleaseInertia="true" image="#img1" front="#front" menu="#menu" back="#back1,#back2" background="#info-bg" timeout="30" fadeoutDuration="5" mouseChildren="true" clusterBubbling="true" glowColor="0xFF0000">
+
+        <TouchContainer id="front" visible="true" targetParent="true" mouseChildren="false">
+            <Flickr apikey="5487a9cd58bb07a37700558d6362972f" id="img1" src="{id}" width="840" height="0" scale=".6"/>
+        </TouchContainer>
+
+        <TouchContainer id="back1" targetParent="true" mouseChildren="false" visible="false">
+            <Graphic id="info-bg" class="info_bg" shape="rectangle"/>
+            <Text id="title" class="info_title" text="{title}" />
+        </TouchContainer>
+
+        <ScrollPane id="back2" visible="false" width="600" height="400" paneStroke="0" scrollThickness="20" mouseChildren="true" targetParent="false" clusterBubbling="true" nativeTransform="true">
+            <ScrollBar buttonFill="0x333333" fill="0x555555" thumbFill="0x303030" cornerHeight="15" cornerWidth="15" buttonVisible="false" />
+            <Text id="description" scrollable="false" paddingLeft="20" paddingRight="20" paddingBottom="10" class="info_description" multiline="true" selectable="false" htmlText="{description}"/>
+			<TouchContainer nativeTransform="false">
+				<GestureList>
+					<Gesture ref="n-drag" gestureOn="true"/>
+				</GestureList>
+			</TouchContainer>			
+        </ScrollPane>
+
+        <Menu id="menu" class="menu_container" alpha="0.6" position="bottom" paddingLeft="20" paddingBottom="20" paddingRight="20" autoHide="true" visible="false" >
+            <Include src="library/cml/buttons/infoFlipButton.cml"/>
+            <Include src="library/cml/buttons/fontSizeButton.cml"/>
+            <Include src="library/cml/buttons/closeButton.cml"/>
+        </Menu>
+
+        <GestureList>
+            <Gesture ref="n-manipulate-inertia-boundary" gestureOn="true"/>
+        </GestureList>
+
+    </FlickrViewer>
+
+	
+</cml>
