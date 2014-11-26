@@ -24,7 +24,7 @@
 </TouchContainer>
 
 
-<CollectionViewer amountToShow="5" autoShuffle="true" gateway="http://www.sifxtreme.com/collectiveaccess-providence-1.2/amfphp-2.1/Amfphp/index.php" bottomContainer="b_container">
+<CollectionViewer amountToShow="5" autoShuffle="true" gateway="flickr" bottomContainer="b_container">
 	
 	<!--<Include src="library/cml/ImageViewer.cml"/>-->
 	<Include src="library/cml/FlickrViewer.cml"/>
