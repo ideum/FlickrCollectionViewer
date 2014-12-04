@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cml>
 
-	<FlickrViewer id="iv" gestureReleaseInertia="true" image="#img1" front="#front" menu="#menu" back="#back1,#back2" background="#info-bg" timeout="10" fadeoutDuration="5" dropShadow="true" mouseChildren="true">
+	<FlickrViewer id="iv" gestureReleaseInertia="true" image="#img1" front="#front" menu="#menu" back="#back1,#back2" background="#info-bg" timeout="60" fadeoutDuration="5" dropShadow="true" mouseChildren="true">
 
 		<TouchContainer id="front" visible="true" targetParent="true" mouseChildren="false">
 			<Flickr apikey="5487a9cd58bb07a37700558d6362972f" id="img1" src="{id}" width="840" height="0" scale=".6"/>

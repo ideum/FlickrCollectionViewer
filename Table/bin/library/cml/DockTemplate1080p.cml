@@ -3,7 +3,7 @@
 <cml>
 
 <Dock id="dock1" class="search" position="bottom" x="0" y="800" searchFields="tags,tags,tags" handle="handle" leftHandle="leftHandle" rightHandle="rightHandle" width="1920" height="280" initializeOpen="false" useSideHandles="true" background="background" nextArrow="forward-btn2" previousArrow="back-btn2" maxClones="40">
-	<FlickrQuery apikey="5487a9cd58bb07a37700558d6362972f"/>
+	<FlickrQuery apikey="5487a9cd58bb07a37700558d6362972f" userid="128619308@N05" tagmode="all"/>
 	<Graphic id="background" color="0x000000" width="1920" height="280" shape="rectangle" lineStroke="2"/>
 
 	<!-- Pagination buttons -->
@@ -44,73 +44,36 @@
 		<Container id="dial-1-container" width="275">
 			
 			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Era" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Penngood" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
 			
 			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Dial id="dial-1" class="dial-bot" x="2" y="40" height="180" width="270" text="19th Century,20th Century - early,20th Century - mid,20th century - late" continuous="false" textColor="0xcccccc"/>
+			<Dial id="dial-1" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" text="Projects"/>
 		</Container>
 		
-			<!--Dial 2-->
+		<!--Dial 2-->
 		<Container id="dial-2-container" width="275">
 			
 			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Branch of Science" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Select" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
 			
 			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Dial id="dial-2" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" filterDial="dial-1"
-			text="20th Century - mid:20th Century - early: Physiology,
-				20th Century - mid:20th Century - early:19th Century: Zoology,
-				20th Century - early: Herbology,
-				20th Century - mid:20th Century - early:19th Century: Physics,
-				20th century - late:20th Century - mid:20th Century - early: Genetics,
-				20th Century - mid:20th Century - early:19th Century: Pathology,
-				20th Century - mid:19th Century: Paleontology,
-				20th Century - mid:20th Century - early: Engineering,
-				20th Century - early: Cytology,
-				20th Century - mid:20th Century - early: Ethnology,
-				20th Century - early:19th Century: Ichthyology,
-				20th Century - mid: Nursing,
-				20th century - late:20th Century - mid:20th Century - early: Journalism,
-				20th Century - mid:20th Century - early:19th Century: Botany,
-				20th Century - mid:20th Century - early: Science Writing,
-				20th Century - mid:20th Century - early:19th Century: Medicine,
-				20th century - late:20th Century - mid:20th Century - early: Biochemistry,
-				20th Century - mid:20th Century - early: Nutrition,
-				20th Century - mid:20th Century - early: Neurology,
-				20th century - late:20th Century - mid:20th Century - early:19th Century: Chemistry,
-				20th Century - mid:20th Century - early: Health,
-				20th Century - mid: Aviation,
-				20th Century - mid: Metallurgy,
-				20th Century - mid: Ornithology,
-				20th Century - mid: Veterinary,
-				20th Century - mid:20th Century - early: Astronomy,
-				20th Century - mid: Library Science,
-				20th Century - mid: Entomology,
-				20th Century - mid:20th Century - early:19th Century: Psychology,
-				20th century - late:20th Century - mid:20th Century - early: Anthropology,
-				20th Century - mid:20th Century - early: Literature,
-				20th Century - mid: Conservation,
-				20th Century - mid:20th Century - early:19th Century: Geology,
-				20th century - late:20th Century - mid:20th Century - early:19th Century: Biology"/>
+			<Dial id="dial-2" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" filterDial="dial-1" text="Presentation, Creative"/>
 		</Container>
 		
-			<!--Dial 3-->
+		<!--Dial 3-->
 		<Container id="dial-3-container" width="275">
 			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Text x="22" y="1" text="Affiliation" selectable="false" cacheAsBitmap="true" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			<Text x="22" y="1" text="Projects" selectable="false" cacheAsBitmap="true" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
 			
 			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
-			<Dial id="dial-3" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" filterDial="dial-2"
-			text="20th century - late| Journalism:20th century - late| Chemistry:20th century - late| Biochemistry:20th century - late| Anthropology:20th Century - mid| Veterinary:20th Century - mid| Psychology:20th Century - mid| Physics:20th Century - mid| Nutrition:20th Century - mid| Nursing:20th Century - mid| Metallurgy:20th Century - mid| Medicine:20th Century - mid| Journalism:20th Century - mid| Health:20th Century - mid| Genetics:20th Century - mid| Engineering:20th Century - mid| Conservation:20th Century - mid| Chemistry:20th Century - mid| Botany:20th Century - mid| Biology:20th Century - mid| Biochemistry:20th Century - mid| Aviation:20th Century - mid| Anthropology:20th Century - early| Psychology:20th Century - early| Physics:20th Century - early| Neurology:20th Century - early| Medicine:20th Century - early| Literature:20th Century - early| Journalism:20th Century - early| Health:20th Century - early| Genetics:20th Century - early| Engineering:20th Century - early| Chemistry:20th Century - early| Botany:20th Century - early| Biology:19th Century| Medicine: Private,
-				20th century - late| Genetics:20th century - late| Biology:20th Century - mid| Zoology:20th Century - mid| Physiology:20th Century - mid| Psychology:20th Century - mid| Physics:20th Century - mid| Pathology:20th Century - mid| Paleontology:20th Century - mid| Ornithology:20th Century - mid| Nutrition:20th Century - mid| Medicine:20th Century - mid| Literature:20th Century - mid| Geology:20th Century - mid| Genetics:20th Century - mid| Ethnology:20th Century - mid| Engineering:20th Century - mid| Chemistry:20th Century - mid| Botany:20th Century - mid| Biology:20th Century - mid| Biochemistry:20th Century - mid| Astronomy:20th Century - mid| Anthropology:20th Century - early| Zoology:20th Century - early| Physiology:20th Century - early| Psychology:20th Century - early| Physics:20th Century - early| Pathology:20th Century - early| Nutrition:20th Century - early| Medicine:20th Century - early| Ichthyology:20th Century - early| Herbology:20th Century - early| Geology:20th Century - early| Genetics:20th Century - early| Cytology:20th Century - early| Chemistry:20th Century - early| Botany:20th Century - early| Biology:20th Century - early| Biochemistry:20th Century - early| Astronomy:20th Century - early| Anthropology:19th Century| Zoology:19th Century| Psychology:19th Century| Physics:19th Century| Pathology:19th Century| Paleontology:19th Century| Medicine:19th Century| Ichthyology:19th Century| Geology:19th Century| Chemistry:19th Century| Botany:19th Century| Biology: Academia,
-				20th Century - mid| Zoology:20th Century - mid| Science Writing:20th Century - mid| Psychology:20th Century - mid| Physics:20th Century - mid| Paleontology:20th Century - mid| Ornithology:20th Century - mid| Nursing:20th Century - mid| Neurology:20th Century - mid| Metallurgy:20th Century - mid| Medicine:20th Century - mid| Library Science:20th Century - mid| Journalism:20th Century - mid| Health:20th Century - mid| Ethnology:20th Century - mid| Entomology:20th Century - mid| Chemistry:20th Century - mid| Botany:20th Century - mid| Biology:20th Century - mid| Aviation:20th Century - mid| Anthropology:20th Century - early| Zoology:20th Century - early| Science Writing:20th Century - early| Psychology:20th Century - early| Physics:20th Century - early| Pathology:20th Century - early| Medicine:20th Century - early| Journalism:20th Century - early| Health:20th Century - early| Genetics:20th Century - early| Ethnology:20th Century - early| Chemistry:20th Century - early| Botany:20th Century - early| Biology:20th Century - early| Anthropology:19th Century| Physics:19th Century| Pathology:19th Century| Botany:19th Century| Biology: Government"/>
+			<Dial id="dial-3" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" filterDial="dial-2"  text="Beginning, Strategy, Communications-BRTA, Communications-HealthyHomeSAMSHA, Communications-NHIT, Outreach-USCensus, Outreach-CES, Technology-CheckYourself, Technology-USCGandHIV, Technology-Recovery, End, Research, Strategy, Communication, Outreach, Technology"/>
 		</Container>
 		
 		<Container id="album-container" width="975" x="-1">
 			<Graphic y="1" shape="rectangle" width="975" height="280" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
 			<Text id="result_text" y="1" text="" font="OpenSansBold" fontSize="22" width="970" autoSize="center" textColor="0xffffff"/>
 			<MenuAlbum x="15" id="menu1" y="41" width="945" loop="false" margin="8" snapping="false" centerContent="false"/>	
-			<Text id="title-text" class="dock-text" x="20" y="20" text="Smithsonian Flickr - Women in Science" font="OpenSansBold" fontSize="40" border="false" borderColor="0xFFFFFF" height="1000" width="970" autoSize="left" textColor="0xffffff"/>
+			<Text id="title-text" class="dock-text" x="20" y="20" text="Penngood" font="OpenSansBold" fontSize="40" border="false" borderColor="0xFFFFFF" height="1000" width="970" autoSize="left" textColor="0xffffff"/>
 			<Text id="instr-text" class="dock-text" x="20" y="80" text="Use the dials to make a selection. Tap on the thumbnails to load them onto the table." font="OpenSansBold" fontSize="25" border="false" borderColor="0xFFFFFF" height="500" width="700" wordWrap="true" multiline="true" autoSize="left" textColor="0xffffff"/>
 		</Container>
 		
@@ -119,6 +82,88 @@
 	</Container>
 </Dock>
 
+<Dock class="search" position="top" x="1920" y="280" searchFields="tags,tags,tags" rotation="180" handle="handle" leftHandle="leftHandle" 
+rightHandle="rightHandle" width="1920" height="280" initializeOpen="false" useSideHandles="true" background="background" nextArrow="forward-btn" previousArrow="back-btn" maxClones="20">
+	<FlickrQuery apikey="5487a9cd58bb07a37700558d6362972f" userid="128619308@N05"  tagmode="all"/>
+	
+	<!-- Pagination buttons -->
+	<Container id="forward-btn" width="60" height="60" x="0" y="30">
+		<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+		<SWF alpha="1" x="32" y="10" color="0xFFFFFF" scale="1.6" rotation="90" classRef="org.openexhibits.assets.ArrowFill" />
+	</Container>
+	
+	<Container id="back-btn" width="60" height="60" x="0" y="30">
+		<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+		<SWF alpha="1" x="8" y="29" color="0xFFFFFF" scale="1.6" rotation="-90" classRef="org.openexhibits.assets.ArrowFill" />
+	</Container>
+		
+	
+	<Graphic id="background" color="0x000000" width="1920" height="280" shape="rectangle" lineStroke="2"/>
+
+	<!--Handles-->
+	<TouchContainer id="handle" height="60">
+		<Graphic shape="roundRectangleComplex" lineStroke="2" width="1920" fill="color" color="0x000000" topLeftRadius="20" topRightRadius="20" height="60"/>
+		<SWF alpha="1" x="25" y="20" cacheAsBitmap="true" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.ArrowOutline" />		
+		<SWF alpha="1" x="1880" y="20" cacheAsBitmap="true" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.ArrowOutline" />		
+		<Text selectable="false" y="5" cacheAsBitmap="true" text="BROWSE" font="OpenSansLight" fontSize="30" width="1920" autoSize="center" textColor="0xffffff"/>
+	</TouchContainer>
+	
+	<TouchContainer id="leftHandle" height="370" width="60">
+		<Graphic shape="roundRectangleComplex" lineStroke="2" width="60" color="0x000000" topLeftRadius="20" height="370"/>
+		<SWF alpha="1" x="40" y="40" cacheAsBitmap="true" color="0xFFFFFF" scale="1.6" rotation="180" classRef="org.openexhibits.assets.ArrowOutline" />
+		<Text selectable="false" x="17" y="55" cacheAsBitmap="true" text="DOCK" leading="-5" font="OpenSansLight" fontSize="30" height="300" width="30" multiline="true" wordWrap="true" textColor="0xffffff" />		
+	</TouchContainer>	
+	
+	<TouchContainer id="rightHandle" height="370" width="60">
+		<Graphic shape="roundRectangleComplex" lineStroke="2" width="60" color="0x000000" topRightRadius="20" height="370"/>
+		<SWF alpha="1" x="40" y="40" color="0xFFFFFF" scale="1.6" rotation="180" classRef="org.openexhibits.assets.ArrowOutline" />
+		<Text selectable="false" x="17" y="55" cacheAsBitmap="true" text="DOCK" leading="-5" font="OpenSansLight" fontSize="30" height="300" width="30" multiline="true" wordWrap="true" textColor="0xffffff" />		
+	</TouchContainer>	
+
+	<!--Contents-->
+		
+	<Container class="dials" x="1" y="1">
+		<!--Dial 4-->
+		<Container id="dial-4-container" width="275">
+			
+			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Penngood" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			
+			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Dial id="dial-4" class="dial-bot" x="2" y="40" height="180" width="270" text="Projects" continuous="false" textColor="0xcccccc" invertDrag="true"/>
+		</Container>
+		
+			<!--Dial 5-->
+		<Container id="dial-5-container" width="275">
+			
+			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Select" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			
+			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Dial id="dial-5" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" invertDrag="true" filterDial="dial-4" text="Presentation, Creative"/>
+		</Container>
+		
+			<!--Dial 6-->
+		<Container id="dial-6-container" width="275">
+			<Graphic y="1" shape="rectangle" width="275" height="35" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Text x="22" y="1" selectable="false" cacheAsBitmap="true" text="Projects" font="OpenSansBold" fontSize="22" border="false" borderColor="0xFFFFFF" autoSize="left" textAlign="left" textColor="0xffffff"/>
+			
+			<Graphic y="36" shape="rectangle" width="275" height="230" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Dial id="dial-6" class="dial-bot" x="2" y="40" height="180" width="270" continuous="false" textColor="0xcccccc" invertDrag="true" filterDial="dial-5" text="Beginning, Strategy, Communications-BRTA, Communications-HealthyHomeSAMSHA, Communications-NHIT, Outreach-USCensus, Outreach-CES, Technology-CheckYourself, Technology-USCGandHIV, Technology-Recovery, End, Research, Strategy, Communication, Outreach, Technology"/>
+		</Container>
+		
+		<Container id="album-container" width="975" x="-1" y="1">
+			<Graphic y="1" shape="rectangle" width="975" height="280" fill="color" color="0x000000" lineStroke="1" lineColor="0x303030"/>
+			<Text selectable="false" id="result_text" y="1" text="" font="OpenSansBold" fontSize="22" width="970" autoSize="center" textColor="0xffffff"/>
+			<MenuAlbum x="15" id="menu1" y="41" width="960" loop="false" margin="8" snapping="false" centerContent="false" dragAngle="180"/>	
+			<Text selectable="false" id="title-text" class="dock-text" x="20" y="20" text="Penngood" font="OpenSansBold" fontSize="36" border="false" borderColor="0xFFFFFF" height="1000" width="970" autoSize="left" textColor="0xffffff"/>
+			<Text selectable="false" id="instr-text" class="dock-text" x="20" y="80" text="Use the dials to make a selection. Tap on the thumbnails to load them onto the table." font="OpenSansBold" fontSize="25" border="false" borderColor="0xFFFFFF" height="500" width="700" wordWrap="true" multiline="true" autoSize="left" textColor="0xffffff"/>
+		</Container>
+		
+		<Layout classRef="ListLayout" useMargins="true" marginX="0"/>
+		
+	</Container>
+</Dock>
 
 
 </cml>
